@@ -35,10 +35,10 @@ Course Design of Digital Signal Process
 #### `项目展示`
 -----------------------------------------------------------------------------------------------
 
-|:---------------:|:---------------:|
-|   IIR滤波器的幅频特性和相频特性    |FIR滤波器的幅频特性和相频特性|
-|![image4](https://github.com/GTshenmi/Digital-Signal-Process/blob/main/Display%20Image/3.png)|![image3](https://github.com/GTshenmi/Digital-Signal-Process/blob/main/Display%20Image/4.png)|
-|   余弦噪声    |   白噪声    | 
+|   IIR滤波器的幅频特性和相频特性    | FIR滤波器的幅频特性和相频特性 |  
+|:---------------:|:---------------:|  
+|![image4](https://github.com/GTshenmi/Digital-Signal-Process/blob/main/Display%20Image/3.png)|![image3](https://github.com/GTshenmi/Digital-Signal-Process/blob/main/Display%20Image/4.png)|  
+|   余弦噪声    |   白噪声    |  
 |![image10](https://github.com/GTshenmi/Digital-Signal-Process/blob/main/Display%20Image/1.png)|![image12](https://github.com/GTshenmi/Digital-Signal-Process/blob/main/Display%20Image/2.png)|
 
 #### `项目文件说明`
