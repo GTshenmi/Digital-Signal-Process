@@ -10,11 +10,11 @@ subplot(4,2,1);
 nft = length(ft1);
  
 time  = (0:(nft-1))/Fs1;
-
-plot(time,ft1);
-title("原语音信号时域波形图");
-xlabel('时间/s');
-ylabel('幅度');
+ 
+% plot(time,ft1);
+% title("原语音信号时域波形图");
+% xlabel('时间/s');
+% ylabel('幅度');
  
 [Fejw2,Fs2] = SpectrumAnalysis(ft1,Fs1);
  
@@ -177,26 +177,24 @@ function [D,C] = IIR_LowPassFilter(fp,fs,Fs)
     
     [D,C] = bilinear(B,A,Fs);
     [B,A] = freqz(D,C);
-    
-%     figure(3);
-%     subplot(2,1,1);
-%     plot(A,abs(B));
-%     xlabel('Normalized Frequency/(×π rad/sample)');
-%     ylabel('Magnitude');  
-%     subplot(2,1,2);
-%     plot(A,angle(B));
-%     xlabel('Normalized Frequency/(×π rad/sample)');
-%     ylabel('Phase');  
+    figure(3);
+    subplot(2,1,1);
+    plot(A,abs(B));
+    xlabel('Normalized Frequency/(×π rad/sample)');
+    ylabel('Magnitude');  
+    subplot(2,1,2);
+    plot(A,angle(B));
+    xlabel('Normalized Frequency/(×π rad/sample)');
+    ylabel('Phase');  
     
 end
  
 function [H] = FIR_LowPassFilter(fp,fs,Fs)
     Wp =  2 * pi * fp;
     Ws =  2 * pi * fs;
-    %n = ceil(6.6 * pi * (Ws - Wp)); 
+%n = ceil(6.6 * pi * (Ws - Wp)); 
     n = 40; 
     Wn = 0.5 * (Wp + Ws)/(Fs * 2 * pi);
     H = fir1(n,Wn,'low',hann(n+1));
-    %figure(3);
     %freqz(H,1,512);   
 end
